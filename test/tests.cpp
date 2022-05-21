@@ -5,21 +5,21 @@
 
 TEST(task1, test1) {
 	Shop shop(0, 60, 400, 3, 6);
-	shop.Shopping();
+	shop.Work();
 	int result = shop.servedClients;
 	EXPECT_EQ(0, result);
 }
 
 TEST(task2, test2) {
 	Shop shop(8, 92, 300, 5, 8);
-	shop.Shopping();
+	shop.Work();
 	int result = shop.rejectedClients;
 	EXPECT_EQ(0, result);
 }
 
 TEST(task3, test3) {
 	Shop shop(1, 60, 228, 5, 2);
-	shop.Shopping();
+	shop.Work();
 	int result = 0;
 	if (shop.rejectedClients > 30)
 		result = 1;
